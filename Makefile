@@ -1,2 +1,2 @@
 live:
-	@templ generate -watch -proxy=localhost:4000
+	@templ generate -watch -proxy=http://localhost:4000
