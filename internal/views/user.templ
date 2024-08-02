@@ -1,0 +1,11 @@
+package views
+
+import "github.com/telematum/gohtmx/internal/bll"
+
+templ ListUsers(all []bll.User) {
+	<ul>
+		for _,u := range all {
+			<li><div>{ u.Name }</div></li>
+		}
+	</ul>
+}

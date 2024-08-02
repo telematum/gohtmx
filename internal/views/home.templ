@@ -1,0 +1,11 @@
+package views 
+
+import "github.com/telematum/gohtmx/internal/layouts"
+
+templ Home() {
+	@layouts.Base("Home") {
+		<div>
+			<div hx-get="/users">Get list of users</div>
+		</div>
+	}
+}
